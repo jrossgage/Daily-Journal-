@@ -1,0 +1,25 @@
+#journalDate {
+    display: flex;
+    flex-direction: column;
+    
+    }
+
+#journalConcepts {
+ display: flex;
+ flex-direction: column;
+        
+        }
+
+.journalEntry {  
+    display: flex;
+    flex-direction: column;
+            
+            }
+
+            
+#mood {
+display: flex;
+flex-direction: column;
+                
+                }
+            
