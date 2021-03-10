@@ -1,11 +1,10 @@
-// export const getJournalEntry = () => {
+export const getJournalEntry = () => {
 
-//     return fetch("http://localhost:8088/users")
-//     .then(response => response.json())
-// };
+    return fetch("http://localhost:8088/entry")
+    .then(response => response.json())
+    .then(parsedResponse => {
+    //     postEntries = parsedResponse
+    return parsedResponse
+})
+};
 
-// export const getConcepts = () => {
-
-//     return fetch("http://localhost:8088/posts")
-//     .then(response => response.json())
-// };
