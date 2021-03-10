@@ -12,6 +12,7 @@ const entryLog = document.querySelector("#entryLog")
 
 export const EntryListComponent = () => {
     // Use the journal entry data from the data module component
+    // let journalHTML = ""
     const entries = getJournalEntries()
 
     for (const entry of entries) {
@@ -19,5 +20,5 @@ export const EntryListComponent = () => {
             Invoke the component that returns an
             HTML representation of a single entry
         */
-        entryLog.innerHTML += ???
-    }
+        entryLog.innerHTML += JournalEntryComponent(entry)
+    } }

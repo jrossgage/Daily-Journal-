@@ -5,8 +5,10 @@
 export const JournalEntryComponent = (entry) => {
     return `
         <section id="entry--${entry.id}" class="journalEntry">
-            Display the entry's full text, and the date
-            it was entered here.
+           <div>${entry.date}</div>
+           <p>${entry.concept}</p>
+           <p>${entry.entry}</p>
+           <p>${entry.mood}</p>
         </section>
     `
 }
