@@ -1,12 +1,20 @@
-// const applicationElement = document.querySelector("journalForm");
+import { EntryListComponent } from "./JournalEntryList.js"
+import { getJournalEntry } from "../src/data/dataManager.js"
+import { useJournalEntries } from "../src/data/dataManager.js"
 
-// applicationElement.addEventListener("click", event => {
-//     if (event.target.id === "logout") {
-//       console.log("You clicked on logout")
-//     }
-//   })
+//Displaying the entries on the dom
+const showJournalEntries = () => {
+  const entryElement = document.querySelector("#entryLog")
+  getJournalEntry()
+  .then(() => {
+    const entries = useJournalEntries()
+    entryElement.innerHTML = EntryListComponent(entries)
+   })
+}
 
-import { EntryListComponent } from "./JournalEntryList.js";
+showJournalEntries()
+
+
 
 //storing a location (the main) on the DOM in a variable.
 const applicationElement = document.querySelector(".journalMain")
@@ -27,4 +35,6 @@ const filteredMood = usePostCollection().filter(singlePost =>{
   }
 })
  }
-EntryListComponent();
+
+//Delete Button
+

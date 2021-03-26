@@ -1,25 +1,42 @@
 {
-  "entry": [
+  "users": [
     {
-      "date": "4/18/2020",
-      "concept": "HTML & CSS",
-      "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-      "mood": "Ok",
+      "name": "Joel",
+      "email": "joel@joel.com",
+      "id": 1
+    }
+  ],
+  "entries": [
+    {
+      "id": 1,
+      "date": "07/24/2025",
+      "concept": "CSS",
+      "entry": "Today we learned!",
+      "mood": "Happy"
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Javascript",
       "id": 1
     },
     {
-      "date": "6/1/2020",
-      "concept": "Notion",
-      "entry": "Notion Pyramid scheme.",
-      "mood": "Content",
+      "name": "HTML",
       "id": 2
     },
     {
-      "date": "6/6/2020",
-      "concept": "World domination",
-      "entry": "Also, Notion Pyramid scheme.",
-      "mood": "Troubled",
+      "name": "CSS",
       "id": 3
+    }
+  ],
+  "moods": [
+    {
+      "name": "Happy",
+      "id": 1
+    },
+    {
+      "name": "Sad",
+      "id": 2
     }
   ]
 }
